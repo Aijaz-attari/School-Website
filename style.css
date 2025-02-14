@@ -408,11 +408,7 @@ html {
   
   
 }
-.footer::before{
-  content: ;
-  background-image: url(assets/08.jpg);
-  opacity: 50%;
-}
+
 
 /* Social Links */
 .social-links {
