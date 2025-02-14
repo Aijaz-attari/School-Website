@@ -1,0 +1,355 @@
+* *::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: poppins;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+.nav {
+  display: flex;
+
+  .logo>img {
+    width: 200px;
+  }
+
+  .navigation {
+    ul {
+      display: flex;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 100;
+}
+
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation ul li {
+  display: inline;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: color 0.3s;
+  font-size: 1.2vw;
+}
+
+.navigation ul li a:hover {
+  color: #69350a;
+
+  text-decoration: underline dashed rgb(255, 196, 0);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 0%;
+}
+
+.hero-content {
+  margin-top: 70px;
+  max-width: 50%;
+  margin-left: 20px;
+}
+
+
+.animated-text {
+  font-size: 3.6vw;
+  font-weight: 600;
+
+  color: rgb(80, 49, 3);
+}
+
+.animated-text span {
+  position: relative;
+  font-family: Playfair Display;
+}
+
+.animated-text span::before {
+  content: "Youtuber";
+  color: rgb(80, 49, 3);
+  animation: words 20s infinite;
+}
+
+.animated-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: white;
+  border-left: 2px solid rgb(80, 49, 3);
+  right: -9px;
+  animation: cursor 1s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+
+  0%,
+  20% {
+    content: "A Place of Learning!";
+  }
+
+  21%,
+  40% {
+    content: "Shaping the Future!";
+  }
+
+  41%,
+  60% {
+    content: "Excellence in Education!";
+  }
+
+  61%,
+  80% {
+    content: "Education for All!";
+  }
+
+  81%,
+  100% {
+    content: "Empowering Young Minds!";
+  }
+}
+
+@keyframes typing {
+
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+.hero-content h1 {
+  /* font-size: 2.5rem; */
+  color: #333;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #555;
+  font-style: italic;
+  font-family: Poppins;
+}
+
+
+.hero-image {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  position: relative;
+  right: -39%;
+  clip-path: inset(5% 20% 0 0);
+}
+
+.hero::after {
+  content: '';
+  background-image: url(/assets/element\ 1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -81px;
+  top: 326px;
+  width: 267px;
+  height: 532px;
+  z-index: -200;
+}
+
+
+.about {
+  padding: 50px;
+
+  text-align: center;
+
+}
+
+.about h1 {
+  font-family: Montserrat;
+  font-size: 3vw;
+  margin-bottom: 3rem;
+  color: #6d2b05;
+  text-decoration: underline dashed rgb(255, 196, 0);
+
+
+}
+
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 10vw;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+
+.founder-image img {
+  width: 400px;
+
+}
+
+
+.about-details {
+  text-align: left;
+  font-size: 1.2vw;
+  font-family: poppins;
+
+}
+
+.about-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-details li {
+  font-size: 1.7rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.separater {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line1 {
+  background-color: rgb(124, 124, 124);
+  height: 5px;
+}
+
+
+.gallery {
+
+  padding-top: 2%;
+  height: fit-content;
+  /* margin: 5% 0; */
+  text-align: center;
+  background-image: url(assets/bg01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-family: Montserrat;
+    font-size: 4vw;
+    margin-bottom: 3rem;
+    margin-top: 70px;
+    color: #6d2b05;
+    text-decoration: underline dashed rgb(255, 196, 0);
+  }
+
+  .imgs {
+    column-width: 200px;
+    margin: 0 16vw;
+
+    img {
+      border-radius: 20px;
+      margin-bottom: 5px;
+      /* box-shadow: 5px 5px 10px black; */
+      width: 100%;
+    }
+  }
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10px;
+}
+
+.more{
+  text-align: center;
+  margin-top: 10%;
+  h1{
+    
+      font-family: Montserrat;
+      font-size: 4vw;
+      margin-bottom: 3rem;
+      margin-top: 70px;
+      color: #6d2b05;
+      text-decoration: underline dashed rgb(255, 196, 0);
+    
+  }
+  .box{
+    .icon{
+
+    }
+    .heading{
+
+    }
+    .descrip{
+        
+    }
+}
+}
