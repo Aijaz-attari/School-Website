@@ -383,3 +383,46 @@ html {
   padding-top: 15px;
   border-top: 1px solid #eee;
 }
+
+/* Footer Styling */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #64410c;
+  padding: 20px 50px;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  
+  
+}
+.footer::before{
+  content: ;
+  background-image: url(assets/08.jpg);
+  opacity: 50%;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2vw;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #ff7f50;
+}
+
+/* School Logo */
+.footer-logo img {
+  height: 300px; /* Adjust size as needed */
+  width: auto;
+}
